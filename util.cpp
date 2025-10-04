@@ -15,15 +15,23 @@ std::string convToLower(std::string src)
     to a set of words based on the criteria given in the assignment **/
 std::set<std::string> parseStringToWords(string rawWords)
 {
+    std::string lowercaseRawWords = convToLower(rawWords);
+    std::string temp = "";
+    std::set<std::string> setParsedWords;
 
-
-
-
-
-
-
-
-
+    for(int i=0; i<lowercaseRawWords.size(); i++){
+        if(lowercaseRawWords[i] < 'A'){
+            if(temp.size() >= 2){
+                setParsedWords.insert(temp);   
+            }
+            temp = "";
+        }
+        else{
+            temp+= lowercaseRawWords[i];
+        }
+    }
+    
+    return setParsedWords;
 
 }
 
