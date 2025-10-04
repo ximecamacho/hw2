@@ -18,8 +18,9 @@ std::set<std::string> parseStringToWords(string rawWords)
     std::string lowercaseRawWords = convToLower(rawWords);
     std::string temp = "";
     std::set<std::string> setParsedWords;
+    int lenWords= lowercaseRawWords.size();
 
-    for(int i=0; i<lowercaseRawWords.size(); i++){
+    for(int i=0; i<lenWords; i++){
         if(lowercaseRawWords[i] < 'A'){
             if(temp.size() >= 2){
                 setParsedWords.insert(temp);   

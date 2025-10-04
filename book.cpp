@@ -19,11 +19,12 @@ std::set<std::string> Book:: keywords() const{
 
 }
 
+
 std::string Book::displayString() const{
     std::string toDisplay=getName()+"\n"+"Author: "+ author_+" ISBN: "+isbn_+"\n"+std::to_string(getPrice())+" "+ std::to_string(getQty())+ " left.";
     return toDisplay;
 }
 
 void Book::dump(std::ostream& os) const{
-    os << category_ << "\n" << getName() << "\n" << getPrice() << "\n" << getQty() << isbn_ << author_ << std::endl;
+    os << category_ << "\n" << getName() << "\n" << getPrice() << "\n" << getQty() << "\n" << isbn_ << "\n" << author_ << std::endl;
 }

@@ -25,6 +25,6 @@ std::string Movie::displayString() const{
 }
 
 void Movie::dump(std::ostream& os) const{
-    os << category_ << "\n" << getName() << "\n" << getPrice() << "\n" << getQty() << genre_ << rating_ << std::endl;
+    os << category_ << "\n" << getName() << "\n" << getPrice() << "\n" << getQty()<< "\n" << genre_ << "\n" << rating_ << std::endl;
 
 }

@@ -23,6 +23,6 @@ std::string Clothing::displayString() const{
 }
 
 void Clothing::dump(std::ostream& os) const{
-    os << category_ << "\n" << getName() << "\n" << getPrice() << "\n" << getQty() << size_ << brand_ << std::endl;
+    os << category_ << "\n" << getName() << "\n" << getPrice() << "\n" << getQty() << "\n" << size_ << "\n" << brand_ << std::endl;
 
 }

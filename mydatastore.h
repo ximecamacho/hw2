@@ -10,6 +10,7 @@ class MyDataStore : public DataStore {
 
     std::map< User* , std::set<Product*> > user_;
     std::set<Product*> prods_;
+    std::set<std::string> totalKeywords;
 
 
 
